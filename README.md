@@ -1,56 +1,72 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# KabanBoard Project
 
 > Description the project.
 
-
 ## Built With
 
-- Major languages
+- HTML, CSS
 - Frameworks
-- Technologies used
+- Kaban boards, Webpacks and Jests
 
-## Live Demo (if available)
+## Live Demo (coming soon)
 
 [Live Demo Link](https://livedemo.com)
 
-
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+## Setup
 
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
+To get a local copy up and running you'll need to have [NodeJS](https://nodejs.org/en/download/) installed on your local machine.
 
 ### Install
 
+After installing NodeJS please follow the next steps...
+
 ### Usage
 
-### Run tests
+```bash
+
+npm i
+
+```
+
+-- for installing dev dependecies.
+
+```bash
+
+npm run build
+
+```
+
+-- to run the project.
+
+### Testing
+
+```bash
+
+npm run dev
+
+```
 
 ### Deployment
 
-
-
 ## Authors
 
-👤 **Author1**
+## Author
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **PROMISE OKECHUKWU**
 
-👤 **Author2**
+- GitHub: [@promzzykoncepts](https://github.com/PromzzyKoncepts)
+- Twitter: [@promzzy](https://twitter.com/prOmzzy)
+- LinkedIn: [promiseokechukwu](https://linkedin.com/in/promiseokechukwu)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Anas Chabaane**
+
+- GitHub: [@ChaabaneAnas](https://github.com/ChaabaneAnas)
+- Twitter: [@AnasChabaane](https://twitter.com/AnasChabaane)
+- LinkedIn: [Anas Chabaane](https://www.linkedin.com/in/anas-chabaane-a0baa21a2/)
 
 ## 🤝 Contributing
 
@@ -71,5 +87,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
