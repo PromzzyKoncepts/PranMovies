@@ -1,0 +1,29 @@
+{
+  "name": "kabanboard",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PromzzyKoncepts/KabanBoard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PromzzyKoncepts/KabanBoard/issues"
+  },
+  "homepage": "https://github.com/PromzzyKoncepts/KabanBoard#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack-dev-server": "^4.10.1"
+  }
+}
