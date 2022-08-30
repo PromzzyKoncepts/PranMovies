@@ -8,7 +8,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
    },
   plugins: [
     new HtmlWebpackPlugin({
-      
+      title: 'LeaderBoard',
+      filename: 'index.html',
+      template: 'src/index.html',
     }),
   ],
   devtool: 'inline-source-map',
@@ -24,10 +26,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
     ],
   },
    output: {
-     filename: '[name].bundle.js',
+     filename: 'main.js',
      path: path.resolve(__dirname, 'dist'),
    },
-   optimization: {
-    runtimeChunk: 'single',
-  },
+  
  };
