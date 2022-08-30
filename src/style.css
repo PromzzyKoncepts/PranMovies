@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;600;700;800&family=Poppins&family=Roboto:wght@700&display=swap');
 
-body{
+body {
   background-color: #fff;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -20,8 +20,9 @@ h1 {
 }
 
 span {
-  color: #000000;
+  color: #000;
 }
+
 li {
   list-style: none;
 }
