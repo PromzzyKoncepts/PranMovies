@@ -15,6 +15,12 @@ header {
   padding: 0 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
 h1 {
   color: wheat;
 }
@@ -57,4 +63,108 @@ footer {
 .go-up a {
   color: brown;
   font-size: 1.5rem;
+}
+
+/* stylings for the display items */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 0;
+  padding-right: 20px;
+
+  /* align-content: center; */
+  margin: auto;
+
+  /* padding: auto; */
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  width: 370px;
+  height: 500px;
+}
+
+.movie-cards {
+  /* text-align: center; */
+  background-color: beige;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-cards:hover {
+  box-shadow: 0 0 4px #747474ab;
+}
+
+.movie-title {
+  text-align: center;
+  color: #464646;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: beige;
+  border: 1px solid brown;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: wheat;
+}
+
+button:active {
+  background-color: brown;
+  color: #fff;
+}
+
+.fa {
+  cursor: pointer;
+}
+
+.fa:hover {
+  color: red;
+}
+
+/* For mobile screens */
+@media screen and (max-width: 768px) {
+  .mobile {
+    color: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
+  .card-container {
+    display: block;
+    margin: auto;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  img {
+    width: 300px;
+    height: 400px;
+  }
 }
