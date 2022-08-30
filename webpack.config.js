@@ -8,7 +8,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
    },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'LeaderBoard',
+      title: 'PRANMOVIES',
       filename: 'index.html',
       template: 'src/index.html',
     }),
