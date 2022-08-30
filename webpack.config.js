@@ -1,14 +1,14 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
- module.exports = {
+module.exports = {
   mode: 'development',
-   entry: {
-     index: './src/index.js',
-   },
+  entry: {
+    index: './src/index.js',
+  },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'LeaderBoard',
+      title: 'PRANMOVIES',
       filename: 'index.html',
       template: 'src/index.html',
     }),
@@ -25,9 +25,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
       },
     ],
   },
-   output: {
-     filename: 'main.js',
-     path: path.resolve(__dirname, 'dist'),
-   },
-  
- };
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+
+};
