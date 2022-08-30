@@ -15,11 +15,10 @@ header {
   padding: 0 20px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .mobile {
     display: none;
   }
-  
 }
 
 h1 {
@@ -66,15 +65,16 @@ footer {
   font-size: 1.5rem;
 }
 
-
 /* stylings for the display items */
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 20px 0;
   padding-right: 20px;
+
   /* align-content: center; */
   margin: auto;
+
   /* padding: auto; */
 }
 
@@ -99,7 +99,7 @@ img {
 }
 
 .movie-cards:hover {
-  box-shadow: 0px 0 4px #747474ab;
+  box-shadow: 0 0 4px #747474ab;
 }
 
 .movie-title {
@@ -144,8 +144,7 @@ button:active {
 }
 
 /* For mobile screens */
-@media screen and (max-width:768px) {
-  
+@media screen and (max-width: 768px) {
   .mobile {
     color: wheat;
     display: flex;
@@ -155,20 +154,17 @@ button:active {
     margin-left: 30px;
   }
 
-  .card-container{
+  .card-container {
     display: block;
     margin: auto;
   }
 
   .nav-items {
     display: none;
-
   }
 
   img {
     width: 300px;
     height: 400px;
   }
-
-
 }
