@@ -7,8 +7,7 @@
     "test": "jest",
     "build": "webpack",
     "watch": "webpack --watch",
-    "start": "webpack serve --open",
-    "deploy": "gh-pages -d dist/"
+    "start": "webpack serve --open"
   },
   "repository": {
     "type": "git",
@@ -38,8 +37,5 @@
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.10.1"
-  },
-  "dependencies": {
-    "gh-pages": "^4.0.0"
   }
 }
