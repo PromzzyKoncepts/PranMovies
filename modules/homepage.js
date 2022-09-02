@@ -36,7 +36,7 @@ const movieList = async () => {
                           <i class="fa fa-heart"  aria-hidden="true"></i>
                           <p class = "totalLikes">${livecount} likes</p>
                         </div>
-                        <button>Comments</button>`;
+                        <button id = ${id} class = "commentBtn">Comments</button>`;
     
     
     

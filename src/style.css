@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;600;700;800&family=Poppins&family=Roboto:wght@700&display=swap');
 
+*, *::after, *::before {
+   box-sizing: border-box;
+  }
+
 body {
   background-color: #fff;
   margin: 0;
@@ -167,4 +171,78 @@ button:active {
     width: 300px;
     height: 400px;
   }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  gap: 30px;
+}
+
+.comments {
+  display: flex;
+  gap: 25px;
+}
+
+.mInfo {
+  flex: 1;
+  background-color: #F7F7F7;
+}
+
+.D-description {
+  display: flex;
+  gap: 20px;
+}
+
+#comment {
+  display: block;
+}
+
+.popup {
+  transition: 200ms ease-in-out;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 80%;
+  padding: 2%;
+  display: flex;
+  background-color: white;
+  z-index: 10;
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.overlay {
+  transition: 200ms ease-in-out;
+  position: fixed;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.D-comments {
+  overflow:scroll;
+  max-height: 150px;
+}
+
+h3 {
+  margin-left: 33px;
+}
+
+.summary {
+  height: 200px;
+  overflow-x: scroll;
 }
