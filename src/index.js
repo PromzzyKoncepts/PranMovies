@@ -5,6 +5,3 @@ import { fetchLikeApi } from '../modules/likes.js'
 document.addEventListener('DOMContentLoaded', () => {
   movieList();
 });
-
-
-
