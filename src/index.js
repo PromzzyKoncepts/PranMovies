@@ -29,15 +29,18 @@ overlay.addEventListener('click', () => {
   overlay.classList.remove('active');
 });
 
-// add and display comments
-const form = document.getElementsByClassName('form');
-console.log(form);
-form.addEventListener('click', async (e) => {
+
+document.addEventListener('click', async (e) => {
+  if (!e.target.matches('.submit')) {
+    return;
+  }
+  console.log(e.target);
   e.preventDefault();
   const name = document.getElementById('fname').value;
   const com = document.getElementById('comment').value;
-  const id = 1;
-  Involvemnt.postComments(id, name, com);
+  const id = 3;
+  await Involvemnt.postComments(id, name, com);
   const comList = await Involvemnt.getComments(id);
+  console.log(comList);
   Popup.displayCom(comList);
 });

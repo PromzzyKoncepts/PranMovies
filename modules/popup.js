@@ -21,14 +21,14 @@ export default class Popup {
         </div>
         </div>
         <div class = "comments">
-          <form class = "form" action = "#">
+          <div class = "form" >
             <label for="fname">your Name:</label><br>
             <input type="text" id="fname" name="fname"><br>
             <label for="comment">Your Comment:</label><br>
             <textarea name="comment" id="comment" cols="20" rows="7">
             </textarea>
-            <input class= "sbumit" type="submit" value="Submit">
-          </form>
+            <input class= "submit" type="submit" value="Submit">
+          </div>
           <div>
             <h3> Your Comments</h3>
             <ul class ="D-comments">
