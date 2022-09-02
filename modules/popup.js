@@ -10,41 +10,43 @@ export default class Popup {
     const mi = await movieInfo;
     const popup = document.querySelector('.popup');
     popup.innerHTML = `  
-     <div class="description">
+      <div class="description">
         <div class="D-description">
-          <img src="${mi.image.medium}" alt="">
-          <div>
-            <h1>${mi.name}</h1>
-            ${mi.summary}
-        </div>
-        </div>
-        <div class = "comments">
-          <div class = "form" >
-            <label for="fname">your Name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="comment">Your Comment:</label><br>
-            <textarea name="comment" id="comment" cols="20" rows="7">
-            </textarea>
-            <input id = ${id} class= "submit" type="submit" value="Submit">
-          </div>
-          <div>
-            <h3> Your Comments</h3>
-            <ul class ="D-comments">
-            </ul>
+          <img src="${mi.image.medium}" class = "image" alt="">
+
+          <div class = "comments">
+            <div class = "form" >
+              <label for="fname">Name:</label><br>
+              <input type="text" id="fname" name="fname" placeholder = "Enter your name"><br>
+              <label for="comment">Comment:</label><br>
+              <textarea name="comment" id="comment" cols="20" rows="4" placeholder = "Enter your comment"></textarea>
+              <input id = ${id} class= "submit" type="submit" value="Submit">
+            </div>
           </div>
         </div>
+
+        <div class = "summary-tag">
+          <h1>${mi.name}</h1>
+          ${mi.summary}
+        </div>
+
       </div>
-    <ul class = "mInfo">
-     <h1>SHOW INFO</h1>
-      <li><a href="${mi.network.officialSite}">${mi.network.name}</a> (${mi.premiered} - ${mi.ended})</li>
-      <li><b>Schedule</b>: ${mi.schedule.days[0]} at ${mi.schedule.time} (${mi.runtime}min)</li>
-      <li><b>Status</b>: ${mi.status}<</li>
-      <li><b>Show Type:</b> ${mi.type}<</li>
-      <li><b>Geners</b>: ${mi.genres}<</li>
-      <li><b>Episodes Ordered</b> </li>
-      <li><b>language:</b>: ${mi.language}</li>
-      <li><b>Rating:</b>: ${mi.rating.average}</li>
-    </ul>`;
+      <ul class = "mInfo">
+        <h1> TV SHOW INFO</h1>
+        <li><a href="${mi.network.officialSite}">${mi.network.name}</a> (${mi.premiered} - ${mi.ended})</li>
+        <li><b>Schedule</b>: ${mi.schedule.days[0]} at ${mi.schedule.time} (${mi.runtime}min)</li>
+        <li><b>Status</b>: ${mi.status}</li>
+        <li><b>Show Type:</b> ${mi.type}</li>
+        <li><b>Genres</b>: ${mi.genres}</li>
+        <li><b>Episodes Ordered</b> </li>
+        <li><b>language:</b>: ${mi.language}</li>
+        <li><b>Rating:</b>: ${mi.rating.average}</li>
+        <div>
+          <h3> All Comments</h3>
+          <ul class ="D-comments">
+          </ul>
+        </div>
+      </ul>`;
   }
 
   static displayCom = async (MoveInfo) => {

@@ -11,6 +11,27 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/* this is where i styled the scroll property for the body */
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(99, 99, 99);
+  outline: 1px solid slategrey;
+  border-radius: 10px;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -175,7 +196,7 @@ button:active {
 
 .description {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex: 2;
   gap: 30px;
 }
@@ -187,11 +208,13 @@ button:active {
 
 .mInfo {
   flex: 1;
+  display: flex;
+  flex-direction: column;
   background-color: #F7F7F7;
 }
 
 .D-description {
-  display: flex;
+  display: block;
   gap: 20px;
 }
 
@@ -206,10 +229,27 @@ button:active {
   top: 50%;
   transform: translate(-50%, -50%) scale(0);
   width: 80%;
+  height: 99%;
   padding: 2%;
   display: flex;
   background-color: white;
   z-index: 10;
+}
+
+.summary-tag h1{
+  color: brown;
+  padding: 0;
+  margin: 0;
+}
+
+.summary-tag {
+  margin-right: 20px;
+  text-align: justify;
+}
+
+.image {
+  width: 250px;
+  height: 370px;
 }
 
 .popup.active {
@@ -224,7 +264,7 @@ button:active {
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   pointer-events: none;
 }
 
@@ -233,9 +273,53 @@ button:active {
   pointer-events: all;
 }
 
+/* this is where i styled the scroll property for the comments */
 .D-comments {
-  overflow:scroll;
-  max-height: 150px;
+  overflow-y: scroll;
+  max-height: 170px;
+  margin: 0px; 
+  transform: translateX(-40px);
+  cursor: grab;
+}
+.D-comments:active {
+  cursor: grabbing;
+}
+
+.D-comments::-webkit-scrollbar {
+  width: 1em;
+}
+
+.D-comments::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.D-comments::-webkit-scrollbar-thumb {
+  background-color: grey;
+  outline: 1px solid slategrey;
+  border-radius: 10px;
+}
+
+.D-comments::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(99, 99, 99);
+  outline: 1px solid slategrey;
+  border-radius: 10px;
+}
+
+#comment {
+  outline: 0px;
+  width: 15rem;
+  padding: 10px;
+  border: 1px solid brown;
+  border-radius: 4px;
+
+}
+
+#fname {
+  outline: 0px;
+  width: 15rem;
+  padding: 10px;
+  border: 1px solid brown;
+  border-radius: 4px;
 }
 
 h3 {
@@ -245,4 +329,38 @@ h3 {
 .summary {
   height: 200px;
   overflow-x: scroll;
+}
+
+.submit {
+  width: 100%;
+  padding: 7px;
+  background-color: bisque;
+  border: 1px solid brown;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit {
+  width: 100%;
+  padding: 7px;
+  background-color: beige;
+  border: 1px solid brown;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+.submit:hover {
+  background-color: bisque;
+}
+
+.submit:active {
+  background-color: brown;
+  color: #fff;
 }

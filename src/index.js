@@ -35,6 +35,7 @@ document.addEventListener('click', async (e) => {
   if (!e.target.matches('.submit')) {
     return;
   }
+  e.preventDefault()
   const name = document.getElementById('fname').value;
   const com = document.getElementById('comment').value;
   const { id } = e.target;
