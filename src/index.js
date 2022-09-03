@@ -1,7 +1,6 @@
 import './style.css';
 
 import { movieList } from '../modules/homepage.js';
-import { fetchLikeApi } from '../modules/likes.js';
 import Popup from '../modules/popup';
 import { Involvemnt } from '../modules/PopupApi';
 
@@ -14,13 +13,13 @@ document.addEventListener('click', async (e) => {
     return;
   }
   const { id } = e.target;
+  const comList = await Involvemnt.getComments(id);
   const MoveInfo = await Popup.getInfos(id);
-  await Popup.display(MoveInfo, id);
+  await Popup.display(MoveInfo, id, comList);
   const overlay = document.querySelector('.overlay');
   const popup = document.querySelector('.popup');
   popup.classList.add('active');
   overlay.classList.add('active');
-  const comList = await Involvemnt.getComments(id);
   Popup.displayCom(comList);
 });
 

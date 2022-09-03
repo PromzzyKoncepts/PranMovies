@@ -5,7 +5,6 @@ const fetchLikeApi = async () => {
   // console.log(getLikeResult)
   return getLikeResult;
 }
-fetchLikeApi()
 
 const submitNewLike = async (id) => {
    const res = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${tvId}/likes`, {

@@ -1,3 +1,4 @@
+import { getComments } from '../__mocks__/mocks';
 import { Involvemnt } from './PopupApi'
 
 export default class Popup {
@@ -6,8 +7,13 @@ export default class Popup {
     return movieInfo;
   }
 
-  static display = async (movieInfo, id) => {
+
+  static countComments = (len) => len.length
+
+  static display = async (movieInfo, id, comList) => {
     const mi = await movieInfo;
+    const arr = await comList;
+    console.log(movieInfo);
     const popup = document.querySelector('.popup');
     popup.innerHTML = `  
       <div class="description">
@@ -42,7 +48,7 @@ export default class Popup {
         <li><b>language:</b>: ${mi.language}</li>
         <li><b>Rating:</b>: ${mi.rating.average}</li>
         <div>
-          <h3> All Comments</h3>
+          <h3> All Comments (${this.countComments(arr)})</h3>
           <ul class ="D-comments">
           </ul>
         </div>

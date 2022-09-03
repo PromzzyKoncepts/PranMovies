@@ -5,14 +5,19 @@ const movieApi = async () => {
   const ShowResult = await fetchResult.json();
   return ShowResult.slice(0, 12);
 };
-movieApi();
+
+window.onload = movieApi();
+
+export const contCount = ( arr ) => {
+  return arr.length
+}
 
 const movieList = async () => {
   const allMovies = await movieApi();
   const fetchLikes = await fetchLikeApi();
 
   const movieLength = document.querySelector(".movielength")
-  movieLength.innerText = `(${allMovies.length})`;
+  movieLength.innerText = `(${contCount(allMovies)})`;
 
   allMovies.forEach((card) => {
 
@@ -40,14 +45,18 @@ const movieList = async () => {
     
     
     
-    const likeButton = cardLI.getElementsByClassName('fa-heart')[0];
-    likeButton.addEventListener('click', async () => {
-      const liveCountElement = cardLI.getElementsByClassName('totalLikes')[0];
-      livecount += 1;
-      liveCountElement.innerHTML = `${livecount} likes`;
-      submitNewLike(id);
+    const likeButton = cardLI.querySelectorAll('.fa-heart');
+    likeButton.forEach((likeBtn) => {
+      likeBtn.addEventListener('click', (btn) => {
+        const liveCountElement = cardLI.getElementsByClassName('totalLikes')[0];
+        livecount += 1;
+        liveCountElement.innerHTML = `${livecount} likes`;
+        submitNewLike(id);
+        btn.disabled = true
+        likeBtn.style.color = 'red';
+      },
+      {once:true})
 
-      console.log('>>>>',livecount);
     })
  
 
