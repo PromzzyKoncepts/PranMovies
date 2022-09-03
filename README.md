@@ -1,56 +1,79 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# PRANMOVIES
 
-> Description the project.
-
+> A movie website that displays movie from an Api and lets a user add reviews, likes and comment with a click.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML, CSS, JS
+- API
+- Kaban boards, Webpacks and Jests
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://promzzykoncepts.github.io/PranMovies/)
 
+## Video Presentation
+[Video link](https://drive.google.com/file/d/19vWqtselCeUS9WgKcvMT2GmPpaxedtsJ/view?usp=sharing)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+## Setup
 
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
+To get a local copy up and running you'll need to have [NodeJS](https://nodejs.org/en/download/) installed on your local machine.
 
 ### Install
 
+After installing NodeJS please follow the next steps...
+
 ### Usage
 
-### Run tests
+```bash
+
+npm i
+
+```
+
+-- for installing dev dependecies.
+
+```bash
+
+npm run build
+
+```
+
+-- to run the project.
+
+### Testing
+
+```bash
+
+npm run start
+
+```
 
 ### Deployment
 
+```bash
 
+npm run deploy
+
+```
 
 ## Authors
 
-👤 **Author1**
+👤 **PROMISE OKECHUKWU**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@promzzykoncepts](https://github.com/PromzzyKoncepts)
+- Twitter: [@promzzy](https://twitter.com/prOmzzy)
+- LinkedIn: [promiseokechukwu](https://linkedin.com/in/promiseokechukwu)
 
-👤 **Author2**
+👤 **Anas Chabaane**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@ChaabaneAnas](https://github.com/ChaabaneAnas)
+- Twitter: [@AnasChabaane](https://twitter.com/AnasChabaane)
+- LinkedIn: [Anas Chabaane](https://www.linkedin.com/in/anas-chabaane-a0baa21a2/)
 
 ## 🤝 Contributing
 
@@ -60,16 +83,14 @@ Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a ⭐️ if you like this project! and give the contributors a follow.
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
+- TvMaze Api.
+- Microverse
 - etc
 
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
