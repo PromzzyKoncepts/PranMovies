@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>PRANMOVIES: Your Go-to for Tv shows and Movies</title>
-</head>
-<body>
-  <main id="main">
-    <header class="header-container">
-      <h1>Pran<span>Movies</span></h1>
-      <nav class="nav-menu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>PRANMOVIES: Your Go-to for Tv shows and Movies</title>
+  </head>
+  <body>
+    <main id="main">
+      <header class="header-container">
+        <h1>Pran<span>Movies</span></h1>
+        <nav class="nav-menu">
+          <div class="mobile">
+            <i class="fa fa-search mobile" aria-hidden="true"></i>
+            <i class="fa fa-bars mobile" aria-hidden="true"></i>
+          </div>
 
-        <div class="mobile">
-          <i class="fa fa-search mobile" aria-hidden="true"></i>
-          <i class="fa fa-bars mobile" aria-hidden="true"></i>
-        </div>
+          <ul>
+            <li class="nav-items">
+              <a href="#">Home</a>
+              <a href="#">Movies</a>
+              <a href="#">Tv Shows</a>
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Search"
+              />
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <ul>
-          <li class="nav-items">
-            <a href="#">Home</a>
-            <a href="#">Movies</a>
-            <a href="#">Tv Shows</a>
-            <input type="text" name="search" id="search" placeholder="Search">
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    
-
-    <section>
-      <h2>Best Tv Series of all Time</h2>
-      <div class="card-container" id="movies"></div>
-    </section>
-
-
-  </main>
-  <footer>
-    <div class="go-up">
-      <a href="#movies"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
-    </div>
-    <div class="footer-text">
-      <p>&copy; Pran<span>Movies</span> Media Inc. All Rights Reserved</p>
-    </div>
-  </footer>
-  <!-- <script type="module" defer src="../dist/main.js"></script> -->
-</body>
+      <section>
+        <h2>Best Tv Series of all Time <small class="movielength"></small></h2>
+        <div class="card-container" id="movies"></div>
+      </section>
+    </main>
+    <div class="popup"></div>
+    <div class="overlay"></div>
+    <footer>
+      <div class="go-up">
+        <a href="#movies"
+          ><i class="fa fa-chevron-circle-up" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="footer-text">
+        <p>&copy; Pran<span>Movies</span> Media Inc. All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
 </html>
