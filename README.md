@@ -10,7 +10,7 @@
 - API
 - Kaban boards, Webpacks and Jests
 
-## Live Demo (coming soon)
+## Live Demo
 
 [Live Demo Link](https://promzzykoncepts.github.io/PranMovies/)
 
