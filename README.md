@@ -14,6 +14,9 @@
 
 [Live Demo Link](https://promzzykoncepts.github.io/PranMovies/)
 
+## Video Presentation
+[Video link](https://drive.google.com/file/d/19vWqtselCeUS9WgKcvMT2GmPpaxedtsJ/view?usp=sharing)
+
 ## Getting Started
 
 ## Setup
