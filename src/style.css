@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;600;700;800&family=Poppins&family=Roboto:wght@700&display=swap');
 
-*, *::after, *::before {
-   box-sizing: border-box;
-  }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #fff;
@@ -56,6 +58,10 @@ span {
 
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .nav-items a {
@@ -210,7 +216,7 @@ button:active {
   flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 
 .D-description {
@@ -220,6 +226,11 @@ button:active {
 
 #comment {
   display: block;
+  outline: 0;
+  width: 15rem;
+  padding: 10px;
+  border: 1px solid brown;
+  border-radius: 4px;
 }
 
 .popup {
@@ -236,7 +247,7 @@ button:active {
   z-index: 10;
 }
 
-.summary-tag h1{
+.summary-tag h1 {
   color: brown;
   padding: 0;
   margin: 0;
@@ -277,12 +288,9 @@ button:active {
 .D-comments {
   overflow-y: scroll;
   max-height: 170px;
-  margin: 0px; 
+  margin: 0;
   transform: translateX(-40px);
   cursor: grab;
-}
-.D-comments:active {
-  cursor: grabbing;
 }
 
 .D-comments::-webkit-scrollbar {
@@ -299,23 +307,18 @@ button:active {
   border-radius: 10px;
 }
 
+.D-comments:active {
+  cursor: grabbing;
+}
+
 .D-comments::-webkit-scrollbar-thumb:hover {
   background-color: rgb(99, 99, 99);
   outline: 1px solid slategrey;
   border-radius: 10px;
 }
 
-#comment {
-  outline: 0px;
-  width: 15rem;
-  padding: 10px;
-  border: 1px solid brown;
-  border-radius: 4px;
-
-}
-
 #fname {
-  outline: 0px;
+  outline: 0;
   width: 15rem;
   padding: 10px;
   border: 1px solid brown;
@@ -334,26 +337,12 @@ h3 {
 .submit {
   width: 100%;
   padding: 7px;
-  background-color: bisque;
-  border: 1px solid brown;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.submit {
-  width: 100%;
-  padding: 7px;
   background-color: beige;
   border: 1px solid brown;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
   margin-top: 10px;
-}
-a {
-  text-decoration: none;
 }
 
 .submit:hover {

@@ -1,19 +1,14 @@
-import { getComments } from '../__mocks__/mocks';
-import { Involvemnt } from './PopupApi'
-
 export default class Popup {
   static getInfos = async (id) => {
     const movieInfo = await fetch(`https://api.tvmaze.com/shows/${id}`).then((result) => result.json());
     return movieInfo;
   }
 
-
   static countComments = (len) => len.length
 
   static display = async (movieInfo, id, comList) => {
     const mi = await movieInfo;
     const arr = await comList;
-    console.log(movieInfo);
     const popup = document.querySelector('.popup');
     popup.innerHTML = `  
       <div class="description">
@@ -57,7 +52,6 @@ export default class Popup {
 
   static displayCom = async (MoveInfo) => {
     const commentList = document.querySelector('.D-comments');
-    console.log(commentList);
     commentList.innerHTML = '';
     const arr = await MoveInfo;
     arr.forEach((item) => {
