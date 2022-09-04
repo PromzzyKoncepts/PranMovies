@@ -405,7 +405,6 @@ h3 {
     max-width: 300px;
     margin: 0;
     padding: 10px;
-    /* background-color: beige; */
     transform: translateX(0);
     cursor: grab;
     font-size: 0.7rem;
@@ -418,9 +417,9 @@ h3 {
     text-align: center;
   }
 
-  .D-comments>li:nth-child(odd) {
+  .D-comments > li:nth-child(odd) {
     background-color: grey;
-    color:#fff
+    color: #fff;
   }
 
   .listCom {
@@ -429,5 +428,4 @@ h3 {
     flex-direction: column;
     justify-content: space-evenly;
   }
-
 }
