@@ -174,8 +174,6 @@ button:active {
   color: red;
 }
 
-
-
 .description {
   display: flex;
   flex-direction: row;
@@ -375,14 +373,14 @@ h3 {
     outline: 0;
     width: 8rem;
     height: 2.5rem;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     border-width: 0 0 1px;
     transition: all 0.5s ease-in-out;
   }
 
   #comment::placeholder {
     padding: 0;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
   }
 
   .remove {
@@ -391,7 +389,7 @@ h3 {
 
   .mInfo {
     padding: 0;
-    margin-left:10px;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     background-color: #f7f7f7;
@@ -400,7 +398,7 @@ h3 {
   .description {
     flex: none;
   }
- 
+
   .D-comments {
     overflow-y: scroll;
     max-height: 170px;
@@ -408,11 +406,8 @@ h3 {
     margin: 0;
     padding: 10px;
     background-color: beige;
-    transform: translateX(0px);
+    transform: translateX(0);
     cursor: grab;
     font-size: 0.4rem;
   }
-
- 
-
 }
