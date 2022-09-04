@@ -43,7 +43,7 @@ export default class Popup {
         <li><b>language:</b>: ${mi.language}</li>
         <li><b>Rating:</b>: ${mi.rating.average}</li>
         <div>
-          <h3> All Comments (${this.countComments(arr)})</h3>
+          <h3 class = "class-heading"> All Comments (${this.countComments(arr)})</h3>
           <ul class ="D-comments">
           </ul>
         </div>
@@ -55,7 +55,7 @@ export default class Popup {
     commentList.innerHTML = '';
     const arr = await MoveInfo;
     arr.forEach((item) => {
-      commentList.innerHTML += `<li>${item.username}: ${item.comment} - ${item.creation_date}</li>`;
+      commentList.innerHTML += `<li class = "listCom">${item.username}: ${item.comment} <br> :${item.creation_date.slice(-5, -1)}</li>`;
     });
   };
 }
