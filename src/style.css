@@ -174,31 +174,7 @@ button:active {
   color: red;
 }
 
-/* For mobile screens */
-@media screen and (max-width: 768px) {
-  .mobile {
-    color: wheat;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-    margin-left: 30px;
-  }
 
-  .card-container {
-    display: block;
-    margin: auto;
-  }
-
-  .nav-items {
-    display: none;
-  }
-
-  img {
-    width: 300px;
-    height: 400px;
-  }
-}
 
 .description {
   display: flex;
@@ -352,4 +328,91 @@ h3 {
 .submit:active {
   background-color: brown;
   color: #fff;
+}
+
+/* For mobile screens */
+@media screen and (max-width: 768px) {
+  .mobile {
+    color: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
+  .card-container {
+    display: block;
+    margin: auto;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  img {
+    width: 300px;
+    height: 400px;
+  }
+
+  #movie-img {
+    width: 130px;
+    height: 200px;
+  }
+
+  .summary-tag {
+    display: none;
+  }
+
+  #fname {
+    outline: 0;
+    width: 8rem;
+    border: 1px solid brown;
+    border-width: 0 0 1px;
+  }
+
+  #comment {
+    outline: 0;
+    width: 8rem;
+    height: 2.5rem;
+    padding-bottom: 0px;
+    border-width: 0 0 1px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  #comment::placeholder {
+    padding: 0;
+    font-family: 'Inter';
+  }
+
+  .remove {
+    display: none;
+  }
+
+  .mInfo {
+    padding: 0;
+    margin-left:10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+  }
+
+  .description {
+    flex: none;
+  }
+ 
+  .D-comments {
+    overflow-y: scroll;
+    max-height: 170px;
+    max-width: 300px;
+    margin: 0;
+    padding: 10px;
+    background-color: beige;
+    transform: translateX(0px);
+    cursor: grab;
+    font-size: 0.4rem;
+  }
+
+ 
+
 }
